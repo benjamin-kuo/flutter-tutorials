@@ -30,7 +30,7 @@ class Page1 extends StatelessWidget {
           onPressed: () {
             Navigator.of(context).push(_createRoute());
           },
-          child: const Text('Go!'),
+          child: const Text('Go 123!'),
         ),
       ),
     );
@@ -41,7 +41,7 @@ Route _createRoute() {
   return PageRouteBuilder(
     pageBuilder: (context, animation, secondaryAnimation) => const Page2(),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      const begin = Offset(0.0, 1.0);
+      const begin = Offset(10.0, 10.0);
       const end = Offset.zero;
       const curve = Curves.ease;
 
@@ -63,7 +63,7 @@ class Page2 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: const Center(
-        child: Text('Page 2'),
+        child: Text('Page 2 - 456'),
       ),
     );
   }

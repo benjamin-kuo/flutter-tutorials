@@ -42,6 +42,9 @@ dependencies:
   # 其中包含數千個最常用的英文單字以及一些實用功能.
   english_words: ^4.0.0
 
+  # 引入 google fonts
+  google_fonts: ^6.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -63,6 +66,17 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  fonts:
+    - family: LXGWWenKaiMonoTC
+      fonts:
+        - asset: assets/fonts/LXGWWenKaiMonoTC-Regular.ttf
+        - asset: assets/fonts/LXGWWenKaiMonoTC-Light.ttf
+        - asset: assets/fonts/LXGWWenKaiMonoTC-Bold.ttf
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSansTC-Regular.ttf
+        - asset: assets/fonts/NotoSansTC-Bold.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:

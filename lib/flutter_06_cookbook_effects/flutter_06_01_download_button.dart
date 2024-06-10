@@ -129,6 +129,7 @@ class DemoAppIcon extends StatelessWidget {
   }
 }
 
+// Define the button's possible visual states
 enum DownloadStatus {
   notDownloaded,
   fetchingDownload,
@@ -242,6 +243,8 @@ class SimulatedDownloadController extends DownloadController with ChangeNotifier
   }
 }
 
+// Define a new stateless widget
+// Display the button shape
 @immutable
 class DownloadButton extends StatelessWidget {
   const DownloadButton({
@@ -322,6 +325,7 @@ class DownloadButton extends StatelessWidget {
   }
 }
 
+// Display the button text
 @immutable
 class ButtonShapeWidget extends StatelessWidget {
   const ButtonShapeWidget({
